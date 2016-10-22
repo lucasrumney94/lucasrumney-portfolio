@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Lucas Rumney</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+
+    <!-- Add custom CSS here -->
+    <link href="css/stylish-portfolio.css" rel="stylesheet">
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">
+	
+  </head>
+
+  <body>
+
+    <!-- Side Menu -->
+    <a id="menu-toggle" href="#" class="btn btn-primary btn-lg toggle"><i class="fa fa-reorder"></i></a>
+    <div id="sidebar-wrapper">
+      <ul class="sidebar-nav">
+        <a id="menu-close" href="#" class="btn btn-default btn-lg pull-right toggle"><i class="fa fa-times"></i></a>
+        <li class="sidebar-brand"><a href="#">Navigation Panel</a></li>
+        <li><a href="#top">Home</a></li>
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#Project-1">Project 1</a></li>
+        <li><a href="#Project-2">Project 2</a></li>
+		<li><a href="#Project-3">Project 3</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+    <!-- /Side Menu -->
+  
+    <!-- Full Page Image Header Area -->
+    <div id="top" class="katheader">
+      <div class="vert-text">
+        <h1>Lucas Rumney</h1>
+        <h3>Making Tomorrow's technology, <em>today.</em></h3>
+        <a href="#about" class="btn btn-default btn-lg">Find Out More</a></br></br>
+		<a href="index.html" class="btn btn-default btn-lg">unKatamari!</a>
+      </div>
+    </div>
+    <!-- /Full Page Image Header Area -->
+  
+    <!-- Intro -->
+    <div id="about" class="intro">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 col-md-offset-3 text-center">
+            <h2>About Me</h2>
+            <p class="lead">I am currently a student at North Carolina University for Electrical and Computer Engineering. I am employed the the ECE department part-time as a website developer. I cannot wait to graduate and begin to explore the possibilities of corporation funded computer hardware research projects.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /Intro -->
+  
+
+    <!-- Callout -->
+    <div id="Project-1" class="callout">
+      <div class="vert-text">
+        <h1>Project 1</h1>
+      </div>
+    </div>
+    <!-- /Callout -->
+
+    <!-- Call to Action -->
+    <div class="call-to-action">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 col-md-offset-3 text-center">
+            <h3>Some buttons</h3>
+            <a href="#" class="btn btn-lg btn-default">Click here!</a>
+            <a href="#" class="btn btn-lg btn-primary">or Here!</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /Call to Action -->
+	
+
+   <!-- Callout -->
+    <div id="Project-2" class="callout">
+      <div class="vert-text">
+        <h1>Project 2</h1>
+      </div>
+    </div>
+    <!-- /Callout -->
+	
+	<!-- Call to Action -->
+    <div class="call-to-action">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 col-md-offset-3 text-center">
+            <h3>Project 2 Information</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /Call to Action -->
+	
+   <!-- Callout -->
+    <div id="Project-3" class="callout">
+      <div class="vert-text">
+        <h1>Project 3</h1>
+      </div>
+    </div>
+    <!-- /Callout -->
+    
+	
+	<!-- Call to Action -->
+    <div class="call-to-action">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 col-md-offset-3 text-center">
+            <h3>Project 3 Information</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /Call to Action -->
+	
+	
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 col-md-offset-3 text-center">
+            <ul class="list-inline">
+              <li><i class="fa fa-facebook fa-3x"></i></li>
+            </ul>
+            <div class="top-scroll">
+              <a href="#top"><i class="fa fa-circle-arrow-up scroll fa-4x"></i></a>
+            </div>
+            <hr>
+			
+            <p>Copyright &copy; Lucas Rumney 2013</p>
+			<p>The material located on this site is not endorsed, sponsored or provided by or on behalf of North Carolina State University.</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- /Footer -->
+
+    <!-- Bootstrap core JavaScript -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.js"></script>
+
+    <!-- Custom JavaScript for the Side Menu and Smooth Scrolling - Put in a custom JavaScript file to clean this up -->
+    <script>
+        $("#menu-close").click(function(e) {
+            e.preventDefault();
+            $("#sidebar-wrapper").toggleClass("active");
+        });
+    </script>
+    <script>
+        $("#menu-toggle").click(function(e) {
+            e.preventDefault();
+            $("#sidebar-wrapper").toggleClass("active");
+        });
+    </script>
+    <script>
+      $(function() {
+        $('a[href*=#]:not([href=#])').click(function() {
+          if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') 
+            || location.hostname == this.hostname) {
+
+            var target = $(this.hash);
+            target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+            if (target.length) {
+              $('html,body').animate({
+                scrollTop: target.offset().top
+              }, 1000);
+              return false;
+            }
+          }
+        });
+      });
+    </script>
+<script src="kat.js"></script>
+  </body>
+
+</html>
