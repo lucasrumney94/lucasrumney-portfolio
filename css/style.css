@@ -1,0 +1,45 @@
+img, 
+embed, 
+video, 
+object {
+	max-width: 100%;
+}
+
+body {
+	background-color: #f3de8a;
+}
+
+
+h1,
+h3 {
+	color: #7e7f9a;
+}
+
+h2 {
+	color: #eb9486;
+}
+
+a {
+	color: #3c5233;
+	padding: 1.5em 0;
+}
+
+hr {
+	color: #f9f8f8;
+	background-color: #f9f8f8;
+	font-weight: bold;
+	height: 8px;
+}
+
+.icon {
+	width: 25%;
+	align-items: center;
+}
+
+.pull-down {
+	padding-top: 5em;
+}
+
+.name {
+	margin-top: 4%
+}
