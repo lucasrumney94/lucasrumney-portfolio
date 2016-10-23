@@ -1,0 +1,121 @@
+#about_content {
+  font-family: Avenir Next;
+  position: absolute;
+  margin-top: 30px;
+  left: 0;
+  right: 0;
+  margin-bottom: 25px;
+  padding: 10px 20px;
+  opacity: 1;
+  transition: all ease-out;
+  margin: 0 auto;
+  max-width: 500px;
+  /* otherwise width 100% takes from padding box, not whole box */
+  box-sizing: border-box;
+  font-size: 14px;
+  text-align: left;
+  /*display: none; TODO: otherwise the margin pushes term down even when not on about,
+  but this makes the height calcs in toggleAbout fail */ }
+
+#wrapper {
+  position: relative;
+  margin-top: 10%;
+  opacity: 0.8;
+  text-align: center; }
+
+/* The meat */
+#about_content {
+  text-align: center;
+  color: #ffffff;
+  line-height: 30px; }
+  #about_content a {
+    text-transform: uppercase;
+    letter-spacing: 15px;
+    /* hack to get text-align center right */
+    padding-left: 15px;
+    transition: opacity 0.3s ease;
+    opacity: 0.3; }
+    #about_content a.active {
+      opacity: 1; }
+      #about_content a.active::before {
+        content: "<";
+        position: absolute;
+        left: 20px; }
+      #about_content a.active::after {
+        content: ">";
+        position: absolute;
+        right: 20px; }
+  #about_content:hover a {
+    opacity: 1; }
+
+#visual_bg {
+  /* transitioning background position lags... but i like it */
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  opacity: 1; }
+
+.background_image {
+  width: 100vw;
+  height: 100vh;
+  opacity: 1; }
+
+#logo {
+  margin-top: 4px; }
+
+#title {
+  margin-bottom: 2px; }
+
+#subtitle {
+  margin-top: 0; }
+
+nav {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  font-size: 15px;
+  font-weight: bold;
+  color: #888;
+  font-family: Avenir Next; }
+
+a {
+  color: #19A685;
+  text-decoration: none; }
+
+a:hover {
+  color: #4AD9B7;
+  text-decoration: none;
+  cursor: pointer; }
+
+nav ul {
+  list-style: none;
+  padding-left: inherit; }
+
+nav ul li {
+  display: inline-block;
+  padding: 4px 8px;
+  transition: all 0.3s ease; }
+
+nav ul li:hover {
+  color: #333; }
+
+nav ul li::before {
+  display: block;
+  width: 5px;
+  height: 5px;
+  margin: 8px auto;
+  border-radius: 5px;
+  border: 2px solid #888;
+  content: '';
+  transition: all 0.3s ease; }
+
+nav ul li:hover::before {
+  background: #FFDE00;
+  border-color: #FFDE00; }
+
+/*# sourceMappingURL=lr.css.map */
