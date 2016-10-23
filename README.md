@@ -6,7 +6,7 @@ TO-DO List for Lucas:
 
 
 color:
-#3A1957 
+some color: #3A1957 
 green #19A685 
 pink #884651
 light-yellow : #EEEDD9
@@ -20,3 +20,5 @@ Bugs Doc:
 2. responsiveness
 3. nav button color and activation area size and circle not clickable
 4. para white on white
+5. hardware wrapper overflow to nav
+6. creative page click events not working 
