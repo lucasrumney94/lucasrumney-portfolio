@@ -12,7 +12,18 @@ pink #884651
 light-yellow : #EEEDD9
 green: #3E8275
 
+Original Kevin Styleguides
 
+$font-body : 'Avenir Next', 'Lato', sans-serif;
+$offwhite  : #fEfDf8;
+$offblack  : #454545;
+$lightgrey : #ddd;
+$grey      : #888;
+$darkgrey  : #333;
+$yellow    : #FFDE00;
+$fast      : 0.3s;
+$slow      : 0.6s;
+$extraslow : 1.2s;
 
 
 Bugs Doc:
