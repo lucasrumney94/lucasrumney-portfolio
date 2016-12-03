@@ -35,7 +35,7 @@ window.onload = function() {
 	"black",
 	"#0D5054",
 	"#4F3A4B",
-	"#854954"
+	"#573037"
 	];
 
 
