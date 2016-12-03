@@ -33,9 +33,9 @@ window.onload = function() {
 	var bgColor = [
 	"",
 	"black",
-	"#178E96",
+	"#0D5054",
 	"#4F3A4B",
-	"#CE7182"
+	"#854954"
 	];
 
 
