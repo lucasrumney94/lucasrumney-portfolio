@@ -45,7 +45,7 @@ window.onload = function() {
 
 	function slide(offset) {
 	  index = Math.min( Math.max( index + offset, 0 ), total - 1 );
-	  document.querySelector( '.counter' ).innerHTML = ( index + 1 ) + ' / ' + total;
+	  //document.querySelector( '.counter' ).innerHTML = ( index + 1 ) + ' / ' + total;
 	  document.querySelector("#name").innerHTML = title[index];
 	  $("div.content").replaceWith(content[index]);
 	  $("div.content").css("background-color", bgColor[index]);
